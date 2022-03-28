@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bugfender/flutter_bugfender.dart';
 
@@ -39,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   initPlatformState() async {
+    print( 'initPlatformState');
     try {
       await FlutterBugfender.init("vU4BYvSUWR05yA3Ir1xmaDBQpzMnrjJe",
           enableAndroidLogcatLogging: false);
@@ -53,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-  void _incrementCounter() {
+  void  _incrementCounter()  {
     setState(() {
       _counter++;
     });

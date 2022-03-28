@@ -31,11 +31,15 @@
 
   <title>bugfender_test</title>
   <link rel="manifest" href="manifest.json">
+
 </head>
+
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script defer src="https://js.bugfender.com/bugfender.js"></script>
+
   <script>
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
@@ -101,4 +105,5 @@
     }
   </script>
 </body>
+
 </html>
